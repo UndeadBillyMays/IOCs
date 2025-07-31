@@ -1,5 +1,9 @@
 ---- Description ----
 
+Quotation3034.exe is executed to install and run DarkVision Rat
+cmd is executed telling the powershell to execute, writing an exclusion path for itself in win defender. 
+File name change to "windowsteam.exe" to hide
+
 Drops startup file 1 IoCs
 description	ioc	Process
 File created	C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\{6FBC8A51-C442-42B8-B615-EBCAE1B74388}.lnk
