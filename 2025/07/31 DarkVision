@@ -4,6 +4,14 @@ Quotation3034.exe is executed to install and run DarkVision Rat
 cmd is executed telling the powershell to execute, writing an exclusion path for itself in win defender. 
 File name change to "windowsteam.exe" to hide
 
+//These messages contain compressed executables which, if executed, will install and run DarkVision RAT
+
+Example PowerShell Commands Observed during analysis:
+
+PoshCLI: powershell.exe  Add-MpPreference -ExclusionPath 'C:\ProgramData\Qutation List PDF'
+
+The sample installs itself for autorun at Windows startup//
+
 Drops startup file 1 IoCs
 description	ioc	Process
 File created	C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\{6FBC8A51-C442-42B8-B615-EBCAE1B74388}.lnk
