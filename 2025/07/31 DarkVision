@@ -1,17 +1,65 @@
 ---- Description ----
 
-
-
+Drops startup file 1 IoCs
+description	ioc	Process
+File created	C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\{6FBC8A51-C442-42B8-B615-EBCAE1B74388}.lnk
 
 ---- Example File Details ----
 
+File Name
+QUOTATION 3034.exe
+Size
+442KB
+MD5
+bfb9728556cd59d321e7af93d9d83f7d
+SHA1
+f5106aaf1ad14448455cecdc095268de8658f532
+SHA256
+c955f8ad1fc411f7cbfce62ff7b8c6fa72f94f8f17eeff6fbecdb2f13e0b4c89
 
+File Name (2)
+C:\ProgramData\windowsteam\windowsteam.exe
+Filesize
+442KB
+MD5
+bfb9728556cd59d321e7af93d9d83f7d
+SHA1
+f5106aaf1ad14448455cecdc095268de8658f532
+SHA256
+c955f8ad1fc411f7cbfce62ff7b8c6fa72f94f8f17eeff6fbecdb2f13e0b4c89
 
 ---- Malware Configuration(s) ----
 
-
+Malware Config
+Extracted
+Family
+darkvision
+C2
+educare1.ddns.net
+'ID', 'CONNECT')
 
 ---- Process Tree(s) ----
 
+Processes
+C:\Users\Admin\AppData\Local\Temp\yVX4rR-EEffL-OYv97jG_nL5T48X7v9vvs2y8T4LTIk.exe
+"C:\Users\Admin\AppData\Local\Temp\yVX4rR-EEffL-OYv97jG_nL5T48X7v9vvs2y8T4LTIk.exe"
+PID:4128
+C:\Windows\SYSTEM32\cmd.exe
+cmd.exe /c powershell.exe Add-MpPreference -ExclusionPath 'C:\ProgramData\Qutation List PDF'
+PID:116
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+powershell.exe  Add-MpPreference -ExclusionPath 'C:\ProgramData\Qutation List PDF'
+PID:2940
+C:\ProgramData\windowsteam\windowsteam.exe
+"C:\ProgramData\windowsteam\windowsteam.exe" {A96C86F8-8900-43AC-AE1B-080F947595C7}
+PID:232
+C:\Windows\SYSTEM32\cmd.exe
+cmd.exe /c powershell.exe Add-MpPreference -ExclusionPath 'C:\ProgramData\Qutation List PDF'
+PID:4420
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+powershell.exe  Add-MpPreference -ExclusionPath 'C:\ProgramData\Qutation List PDF'
+PID:4664
+C:\Windows\explorer.exe
+"C:\Windows\explorer.exe"
 
 ---- IOCs ----
