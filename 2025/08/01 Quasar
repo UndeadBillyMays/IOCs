@@ -10,7 +10,7 @@ The sample sets itself to run "onlogon" and runs itself on a schedule for post i
 //Questions: How does the botnet aspect detected by triages? How does the malware persist and gain privileged access with scheduling itself and using debug privilege? 
               Is the larger amount of outgoing network traffic suspicious or botnet like? Is anything after the C2 useful to include here in malware config?
               Is there a way for me to tell that its a botnet without the label in triage or knowing its associated with quasar beforehand? In file details should I
-              include the alternative name of client.exe, or is it understood that that is the file installed from the compressed executable?
+              include the alternative name of client.exe, or is it understood that that is the file installed from the compressed executable? is the reconect delay happening persistence?
 
 ---- Example File Details ----
 
