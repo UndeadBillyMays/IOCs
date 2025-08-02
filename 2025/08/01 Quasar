@@ -1,7 +1,7 @@
 ---- Description ----
 
 Driver Fixer executable executes, creating a new startup task disguised as "google play games services" and running the payload client.exe. 
-Client.exe installs itself as a startup task in roaming files under the same disguise. The installed files run "onlogon" and create scheduled tasks for post infection execution. 
+Client.exe installs itself as a startup task in roaming files under the same disguise. The installed files run "onlogon" and create scheduled tasks for post infection execution and persistence. 
 
 //There is more outward network traffic than normal. File appears to be attempting to gain privileged access by self-scheduling. 
 //Questions: how does the botnet aspect detected by triages? How does the malware persist and gain privileged access with scheduling itself and using debug privilege? 
@@ -22,26 +22,19 @@ SHA256
 
 ---- Malware Configuration(s) ----
 
-Family
-quasar
-Version
-1.4.1
-Botnet
-Office04
-C2
+Family: quasar
+Version: 1.4.1
+Botnet: Office04
+C2:
 192.168.2.254:4782
 172.16.0.2:4782
-Mutex
-db7c1f22-b431-4900-89aa-ba518471235d
+
+Mutex: db7c1f22-b431-4900-89aa-ba518471235d
 Attributes
-encryption_key
-85770506A92DD998222881EBAEC5254C858CDF0A
-install_name
-Client.exe
-key_salt
-bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941
-startup_key
-Google Play Games Services
+encryption_key: 85770506A92DD998222881EBAEC5254C858CDF0A
+install_name: Client.exe
+key_salt: bfeb1e56fbcd973bb219022430a57843003d5644d21e62b9d4f180e7e6c33941
+startup_key: Google Play Games Services
 
 ---- Process Tree(s) ----
 
