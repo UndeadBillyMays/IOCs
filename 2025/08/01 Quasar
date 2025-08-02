@@ -1,8 +1,10 @@
 ---- Description ----
 
-Driver Fixer executable executes,  creating a new startup task disguised as "google play games services" as a scheduled task and running the payload client.exe. 
-Client.exe installs itself as a startup task in roaming files under the same disguise and has a lot of network traffic going out.
- 
+Driver Fixer executable executes, creating a new startup task disguised as "google play games services" and running the payload client.exe. 
+Client.exe installs itself as a startup task in roaming files under the same disguise. The installed files run "onlogon" and create scheduled tasks for post infection execution. 
+
+//There is more outward network traffic than normal. File appears to be attempting to gain privileged access by self-scheduling. 
+
 ---- Example File Details ----
 
 File Name
