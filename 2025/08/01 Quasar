@@ -4,23 +4,14 @@ Driver Fixer executable executes, creating a new startup task disguised as "goog
 Client.exe installs itself as a startup task in roaming files under the same disguise. The installed files run "onlogon" and create scheduled tasks for post infection execution. 
 
 //There is more outward network traffic than normal. File appears to be attempting to gain privileged access by self-scheduling. 
+//Questions: how does the botnet aspect detected by triages? How does the malware persist and gain privileged access with scheduling itself and using debug privilege? 
+              Is the larger amount of outgoing network traffic suspicious or botnet like? Is anything after the C2 useful to include here in malware config?
 
 ---- Example File Details ----
 
 File Name
 Driver Fixer.exe
 Size
-3.3MB
-MD5
-dfa977d93ef41b5faef524ed8236a239
-SHA1
-ff01cd842f666950cadb81a582091938bf9e59da
-SHA256
-5b3dc34f19ceb9883fb4da7d0436e1dafaab0a159e1601e2a5621b29ce4288a0
-
-File Name (2)
-C:\Users\Admin\AppData\Roaming\SubDir\Client.exe
-Filesize
 3.3MB
 MD5
 dfa977d93ef41b5faef524ed8236a239
