@@ -1,5 +1,10 @@
 ---- Description ----
 
+Driver Fixer executable executes,  creating a new startup task disguised as "google play games services" and running the payload client.exe. 
+Client.exe installs itself as a startup task in roaming files under the same disguise and has a lot of network traffic going out.
+
+---- Example File Details ----
+
 File Name
 Driver Fixer.exe
 Size
@@ -21,10 +26,6 @@ SHA1
 ff01cd842f666950cadb81a582091938bf9e59da
 SHA256
 5b3dc34f19ceb9883fb4da7d0436e1dafaab0a159e1601e2a5621b29ce4288a0
-
----- Example File Details ----
-
-
 
 ---- Malware Configuration(s) ----
 
@@ -53,8 +54,6 @@ Google Play Games Services
 
 C:\Users\Admin\AppData\Local\Temp\Driver Fixer.exe
 "C:\Users\Admin\AppData\Local\Temp\Driver Fixer.exe"
-Suspicious use of AdjustPrivilegeToken
-Suspicious use of WriteProcessMemory
 PID:2308
 C:\Windows\SYSTEM32\schtasks.exe
 "schtasks" /create /tn "Google Play Games Services" /sc ONLOGON /tr "C:\Users\Admin\AppData\Roaming\SubDir\Client.exe" /rl HIGHEST /f
@@ -64,5 +63,7 @@ C:\Users\Admin\AppData\Roaming\SubDir\Client.exe
 PID:1344
 C:\Windows\SYSTEM32\schtasks.exe
 "schtasks" /create /tn "Google Play Games Services" /sc ONLOGON /tr "C:\Users\Admin\AppData\Roaming\SubDir\Client.exe" /rl HIGHEST /f
+
+https://tria.ge/250801-scqddscp6v/behavioral2
 
 ---- IOCs ----
