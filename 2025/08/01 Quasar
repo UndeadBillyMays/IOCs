@@ -1,12 +1,16 @@
 ---- Description ----
 
-Driver Fixer executable executes installing quasar RAT, creating a new startup task for itself disguised as "google play games services" and running the quasar payload client.exe. 
-Client.exe installs itself as a startup task in roaming files under the same disguise. The installed files run "onlogon" and create scheduled tasks for post infection execution and persistence. 
+This sample containes compressed executables which, when executed installs Quasar RAT.\
+Sample creates a new startup task for itself disguised as "google play games services" and running client.exe. 
+Client.exe installs itself as a startup task in roaming files under the same disguise. 
+The sample sets itself to run "onlogon" and runs itself on a schedule for post infection execution and persistence. 
+
 
 //There is more outward network traffic than normal. File appears to be attempting to gain privileged access by self-scheduling. 
 //Questions: How does the botnet aspect detected by triages? How does the malware persist and gain privileged access with scheduling itself and using debug privilege? 
               Is the larger amount of outgoing network traffic suspicious or botnet like? Is anything after the C2 useful to include here in malware config?
-              Is there a way for me to tell that its a botnet without the label in triage or knowing its associated with quasar beforehand? 
+              Is there a way for me to tell that its a botnet without the label in triage or knowing its associated with quasar beforehand? In file details should I
+              include the alternative name of client.exe, or is it understood that that is the file installed from the compressed executable?
 
 ---- Example File Details ----
 
